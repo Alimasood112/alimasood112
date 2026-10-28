@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Ali Masood: Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--text:#14202e;--muted:#566474;--accent:#0e6ba8;--hi:#e6a800;--border:#dce3eb;--soft:#e9eff6;
+--h:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--b:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e151e;--surface:#16202c;--text:#e8edf3;--muted:#9aa8b8;--accent:#5db4ec;--hi:#f2c811;--border:#263444;--soft:#1d2a39;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e151e;--surface:#16202c;--text:#e8edf3;--muted:#9aa8b8;--accent:#5db4ec;--hi:#f2c811;--border:#263444;--soft:#1d2a39;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--b)}
+a{color:var(--accent)}
+.wrap{max-width:820px;margin:0 auto;padding:0 1.25rem}
+.wide{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header.hero{padding:4.5rem 0 3rem}
+h1{font:800 clamp(2.6rem,8vw,4.6rem)/1 var(--h);letter-spacing:-.03em;margin:0 0 1rem}
+.role{font:500 clamp(1.15rem,3vw,1.5rem)/1.35 var(--h);color:var(--muted);margin:0 0 1.5rem;max-width:34ch}
+.lede{max-width:62ch;font-size:1.08rem;margin:0 0 1.75rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--text);color:var(--text)}
+.btn.p{background:var(--hi);border-color:var(--hi);color:#14202e}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+nav{border-block:1px solid var(--border);background:var(--surface)}
+nav .wide{display:flex;gap:1.5rem;overflow-x:auto;padding-block:.8rem;white-space:nowrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--text)}
+section{padding:3.5rem 0}
+h2{font:700 1.9rem/1.15 var(--h);letter-spacing:-.02em;margin:0 0 .5rem}
+.sub{color:var(--muted);margin:0 0 2rem;max-width:62ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem 2rem}
+.skills h3{font:600 1rem var(--h);margin:0 0 .4rem}
+.skills p{margin:0;color:var(--muted)}
+.tl{border-left:3px solid var(--hi);margin:0;padding:0 0 0 1.4rem;list-style:none}
+.tl li{margin-bottom:2.2rem;position:relative}
+.tl li::before{content:"";position:absolute;left:-1.9rem;top:.55rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--bg);border:3px solid var(--hi)}
+.tl h3{font:700 1.25rem var(--h);margin:0}
+.when{color:var(--muted);font-size:.93rem;margin:.1rem 0 .6rem}
+.tl ul{margin:0;padding-left:1.1rem}
+.tl li li{margin:0 0 .35rem;padding:0}.tl li li::before{display:none}
+.note{font-size:.88rem;color:var(--muted);border-left:3px solid var(--accent);padding:.1rem 0 .1rem .8rem;margin:0 0 2rem;max-width:70ch}
+.dash{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.4rem;margin-bottom:1.75rem}
+.dash>h3{font:700 1.2rem var(--h);margin:0 0 .2rem}
+.dash>p{margin:0 0 1.2rem;color:var(--muted);font-size:.93rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.8rem;margin-bottom:1.2rem}
+.kpi{background:var(--soft);border-radius:10px;padding:.8rem 1rem}
+.kpi b{display:block;font:800 1.7rem/1.1 var(--h)}
+.kpi span{font-size:.85rem;color:var(--muted)}
+.panels{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:1.2rem}
+@media (max-width:720px){.panels{grid-template-columns:1fr}}
+.panels h4{font:600 .95rem var(--h);margin:0 0 .5rem}
+svg{width:100%;height:auto;display:block}
+.ax{fill:var(--muted);font:11px var(--b)}.gl{stroke:var(--border)}
+.ln{fill:none;stroke:var(--accent);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.ar{fill:var(--accent);opacity:.14}
+.bar{display:grid;grid-template-columns:5.2rem 1fr 3.2rem;align-items:center;gap:.6rem;margin-bottom:.55rem;font-size:.9rem}
+.track{background:var(--soft);border-radius:5px;height:.9rem;overflow:hidden}
+.fill{height:100%;background:var(--accent);border-radius:5px}
+.fill.y{background:var(--hi)}
+.bar em{font-style:normal;color:var(--muted);text-align:right}
+.cases{display:grid;gap:2.5rem}
+.case h3{font:700 1.3rem var(--h);margin:0 0 .6rem}
+.case dl{margin:0;display:grid;grid-template-columns:7rem 1fr;gap:.5rem 1.2rem}
+.case dt{font-weight:600}.case dd{margin:0;color:var(--muted)}
+@media (max-width:560px){.case dl{grid-template-columns:1fr}.case dd{margin-bottom:.5rem}}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.two h3{font:600 1.05rem var(--h);margin:0}.two p{margin:.2rem 0 0;color:var(--muted)}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--border);background:var(--surface)}
+footer p{margin:.3rem 0}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1>Muhammad Ali Masood</h1>
+<p class="role">Data analyst who turns messy data into dashboards people trust.</p>
+<p class="lede">I have three years of fully remote experience building and managing Power BI reporting, including at British American Tobacco. I work in DAX, Power Query, star-schema and semantic models, SQL, Python and Microsoft OneLake.</p>
+<div class="cta"><a class="btn p" href="mailto:masoodali112@gmail.com">Email me</a><a class="btn" href="tel:+923354248402">Call +92 335 4248402</a></div>
+</div></header>
+<nav aria-label="Sections"><div class="wide"><a href="#experience">Experience</a><a href="#dashboards">Sample dashboards</a><a href="#cases">Sample case studies</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+
+<main>
+<section id="experience"><div class="wrap">
+<h2>Experience</h2><p class="sub">Three years of remote analytics work, plus an onsite internship.</p>
+<ol class="tl">
+<li><h3>Data Analyst, British American Tobacco</h3><p class="when">Remote, June 2025 to September 2026</p><ul>
+<li>Managed the Power BI platform for the business: reports, dashboards, workspaces and scheduled refreshes.</li>
+<li>Designed star-schema and semantic models with DAX measures, giving every team consistent KPIs.</li>
+<li>Prepared and cleaned data from multiple sources on Microsoft OneLake and validated it with SQL.</li>
+<li>Turned stakeholder requirements into user-centric dashboards and monitored datasets and refreshes.</li></ul></li>
+<li><h3>Junior Data Analyst, CSGO BOOK</h3><p class="when">Remote, April 2023 to March 2025</p><ul>
+<li>Developed and maintained Power BI reports and dashboards for day-to-day business decisions over two years.</li>
+<li>Used Power Query to import, clean, merge and reshape data into repeatable, refreshable pipelines.</li>
+<li>Wrote Python scripts for cleaning, preparation and exploratory analysis, and charted trends and anomalies with Matplotlib.</li>
+<li>Built Power BI data models and measures that standardized how metrics were calculated.</li>
+<li>Delivered recurring reports on schedule and handled ad hoc data requests.</li></ul></li>
+<li><h3>Data Analyst Intern, Code Ninja</h3><p class="when">Lahore, onsite, December 2022 to February 2023</p><ul>
+<li>Cleaned and prepared raw datasets, fixing missing values, duplicates and inconsistent formats.</li>
+<li>Learned and applied data analysis in Python in a hands-on team setting.</li></ul></li>
+</ol></div></section>
+
+<section id="dashboards"><div class="wide">
+<h2>Sample dashboards</h2>
+<p class="note">These two dashboards are illustrative samples built with made-up data to show my design approach. They are not from any employer.</p>
+
+<div class="dash"><h3>Sales performance overview</h3><p>Revenue trend and regional split at a glance, with the headline numbers on top.</p>
+<div class="kpis"><div class="kpi"><b>$48.4M</b><span>Revenue, last 12 months</span></div><div class="kpi"><b>31%</b><span>Gross margin</span></div><div class="kpi"><b>212K</b><span>Orders</span></div><div class="kpi"><b>+12%</b><span>Versus prior year</span></div></div>
+<div class="panels"><div><h4>Monthly revenue ($M)</h4><svg id="line" viewBox="0 0 600 220" role="img" aria-label="Line chart of monthly revenue rising from 3.1 to 5.4 million dollars"></svg></div>
+<div><h4>Revenue by region ($M)</h4><div id="reg"></div></div></div></div>
+
+<div class="dash"><h3>Data quality and refresh monitor</h3><p>The view a platform owner needs each morning: which datasets refreshed, and which need attention.</p>
+<div class="kpis"><div class="kpi"><b>5</b><span>Datasets monitored</span></div><div class="kpi"><b>1</b><span>Needs attention</span></div></div>
+<h4 style="font:600 .95rem var(--h);margin:0 0 .6rem">Refresh success, last 30 days</h4><div id="ref"></div></div>
+</div></section>
+
+<section id="cases"><div class="wrap">
+<h2>Sample case studies</h2>
+<p class="note">These are illustrative examples of how I approach typical projects. They describe the method, not confidential employer work.</p>
+<div class="cases">
+<article class="case"><h3>Cleaning messy sales exports with Python</h3><dl>
+<dt>Problem</dt><dd>Monthly exports from several systems had duplicate orders, missing values and mixed date formats, so reports disagreed.</dd>
+<dt>Approach</dt><dd>Wrote a repeatable Python script to standardize formats, remove duplicates and flag gaps, then checked totals against the source systems.</dd>
+<dt>Result</dt><dd>One clean, documented dataset that feeds every report, with a short log of anything that needed manual review.</dd></dl></article>
+<article class="case"><h3>Building a star-schema model in Power BI</h3><dl>
+<dt>Problem</dt><dd>Reports were built on wide, flat tables, so the same KPI was calculated differently in each dashboard.</dd>
+<dt>Approach</dt><dd>Split the data into fact and dimension tables, added a shared date table, and wrote the KPIs once as DAX measures in a semantic model.</dd>
+<dt>Result</dt><dd>Consistent numbers across reports, faster visuals, and a model that new dashboards can reuse.</dd></dl></article>
+<article class="case"><h3>Monitoring refreshes and data quality</h3><dl>
+<dt>Problem</dt><dd>Stakeholders found out about stale or broken reports before the analytics team did.</dd>
+<dt>Approach</dt><dd>Tracked refresh outcomes per dataset and added SQL checks for row counts and nulls, shown on a simple status dashboard.</dd>
+<dt>Result</dt><dd>Failures get spotted and fixed early, and stakeholders can see when each report was last updated.</dd></dl></article>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2><p class="sub">Tools I use every week.</p>
+<div class="skills">
+<div><h3>BI and visualization</h3><p>Power BI Desktop and Service, DAX, Power Query (M), semantic modelling, Matplotlib</p></div>
+<div><h3>Data modelling</h3><p>Star schema, dimensional and semantic modelling, data cleaning and transformation</p></div>
+<div><h3>Data and engineering</h3><p>SQL, Microsoft OneLake, ETL/ELT for reporting, Python, data validation</p></div>
+<div><h3>Automation</h3><p>N8N workflows, Python scripting</p></div>
+<div><h3>Ways of working</h3><p>Agile, stakeholder management, requirements gathering, remote collaboration</p></div>
+<div><h3>Languages</h3><p>English (fluent), Urdu (fluent)</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education and certification</h2><div class="two" style="margin-top:1.5rem">
+<div><h3>Bachelor’s Degree in Computer Science</h3><p>Beaconhouse National University, 2021 to 2025</p></div>
+<div><h3>Data Analysis in Python</h3><p>WorldQuant University, December 2022</p></div></div></div></section>
+</main>
+
+<footer id="contact"><div class="wrap"><h2>Let’s talk</h2>
+<p>I’m open to fully remote Power BI and data analyst roles.</p>
+<p><a href="mailto:masoodali112@gmail.com">masoodali112@gmail.com</a></p>
+<p><a href="tel:+923354248402">+92 335 4248402</a></p></div></footer>
+
+<script>
+(function(){
+var m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],v=[3.1,3.3,3.0,3.6,3.9,3.8,4.2,4.4,4.1,4.6,5.0,5.4];
+var W=600,H=220,L=34,R=10,T=12,B=26,mx=6,s="";
+function x(i){return L+i*(W-L-R)/11}function y(n){return T+(1-n/mx)*(H-T-B)}
+[0,2,4,6].forEach(function(g){s+='<line class="gl" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text class="ax" x="'+(L-6)+'" y="'+(y(g)+4)+'" text-anchor="end">'+g+'</text>'});
+var p=v.map(function(n,i){return x(i)+","+y(n)}).join(" ");
+s+='<polygon class="ar" points="'+x(0)+","+y(0)+" "+p+" "+x(11)+","+y(0)+'"/><polyline class="ln" points="'+p+'"/>';
+m.forEach(function(n,i){if(i%2==0)s+='<text class="ax" x="'+x(i)+'" y="'+(H-6)+'" text-anchor="middle">'+n+'</text>'});
+s+='<circle cx="'+x(11)+'" cy="'+y(5.4)+'" r="5" fill="var(--hi)"/>';
+document.getElementById("line").innerHTML=s;
+function bars(id,d,max,fmt,cls){var h="";d.forEach(function(r){h+='<div class="bar"><span>'+r[0]+'</span><div class="track"><div class="fill '+(cls&&cls(r)||"")+'" style="width:'+(r[1]/max*100)+'%"></div></div><em>'+fmt(r[1])+'</em></div>'});document.getElementById(id).innerHTML=h}
+bars("reg",[["North",19.6],["South",14.2],["East",9.8],["West",4.8]],20,function(n){return n.toFixed(1)});
+bars("ref",[["Sales",99.6],["Finance",98.9],["Inventory",97.8],["Customers",99.2],["Marketing",91.4]],100,function(n){return n.toFixed(1)+"%"},function(r){return r[1]<95?"y":""});
+})();
+</script>
+</body>
+</html>
